@@ -1,0 +1,12 @@
+< we're back
+|did you have fun? >
+|< huge amounts of awesome fun
+|huge amounts of awesome fun ?
+|< HUGE AMOUNTS OF AWESOME FUN!
+|----------
+THE END
+----------
+|made by: ctz <jpixton@gmail.com>
+using: libgdx, lwjgl
+for: ludum dare 20
+on: 30/04/11-01/05-11

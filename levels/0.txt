@@ -1,0 +1,11 @@
+--- DEADWEIGHT ---
+
+controls:
+arrow keys to move
+spacebar to jump
+esc to restart level
+any key to advance dialogue
+|< i'm going out
+|it's dangerous to go alone, >
+|take your narcoleptic sister >
+|< yes mother

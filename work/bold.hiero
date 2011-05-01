@@ -1,0 +1,26 @@
+font.size=32
+font.bold=true
+font.italic=false
+
+pad.top=1
+pad.right=1
+pad.bottom=1
+pad.left=1
+pad.advance.x=0
+pad.advance.y=0
+
+glyph.page.width=256
+glyph.page.height=256
+
+effect.class=org.newdawn.slick.font.effects.GradientEffect
+effect.Top color=cccccc
+effect.Bottom color=666666
+effect.Offset=0
+effect.Scale=0.7
+effect.Cyclic=true
+
+effect.class=org.newdawn.slick.font.effects.OutlineEffect
+effect.Color=000000
+effect.Width=1.0
+effect.Join=2
+

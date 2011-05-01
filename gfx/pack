@@ -1,0 +1,145 @@
+
+slices1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+door
+  rotate: false
+  xy: 0, 0
+  size: 265, 234
+  orig: 265, 234
+  offset: 0, 0
+  index: -1
+cloud
+  rotate: false
+  xy: 267, 0
+  size: 332, 187
+  orig: 332, 187
+  offset: 0, 0
+  index: -1
+spikes
+  rotate: false
+  xy: 0, 236
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+overlay-rocks
+  rotate: false
+  xy: 130, 236
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+overlay-flower
+  rotate: false
+  xy: 0, 366
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ground
+  rotate: false
+  xy: 130, 366
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ground-r
+  rotate: false
+  xy: 267, 189
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ground-lr
+  rotate: false
+  xy: 267, 319
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+ground-l
+  rotate: false
+  xy: 397, 189
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+dirt
+  rotate: false
+  xy: 397, 319
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+player
+  rotate: false
+  xy: 601, 0
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+player-overlay
+  rotate: false
+  xy: 703, 0
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+deadweight
+  rotate: false
+  xy: 805, 0
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+box-enemy
+  rotate: false
+  xy: 907, 0
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ball-helper
+  rotate: false
+  xy: 601, 102
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ball-enemy
+  rotate: false
+  xy: 601, 204
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+eye-sleep
+  rotate: false
+  xy: 267, 449
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+eye-open
+  rotate: false
+  xy: 301, 449
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+eye-closing
+  rotate: false
+  xy: 335, 449
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+eye-closed
+  rotate: false
+  xy: 527, 189
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
