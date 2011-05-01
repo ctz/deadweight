@@ -41,6 +41,11 @@ public class GoAloneListener implements ApplicationListener
   
   void restart()
   {
+    if (this.stage != null)
+    {
+      this.stage.dispose();
+    }
+    
     this.stage = new LevelStage();
     this.input.setLevel(this.stage);
     this.stage.load(currentLevel);

@@ -79,6 +79,11 @@ public class LevelStage
     this.makeBack();
   }
   
+  void dispose()
+  {
+    this.w.dispose();
+  }
+  
   void youdied()
   {
     this.stop(true, Consts.youDiedDialogue);
