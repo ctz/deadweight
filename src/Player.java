@@ -65,7 +65,7 @@ public class Player extends WithBlinkyEyes
       if (!c.getFixtureA().getBody().equals(this.body) && !c.getFixtureB().getBody().equals(this.body))
         continue;
       
-      vec = c.GetWorldManifold().getNormal();
+      vec = c.getWorldManifold().getNormal();
       vec.nor();
 
       return true;

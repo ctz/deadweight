@@ -22,7 +22,6 @@ import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
-import com.badlogic.gdx.utils.MathUtils;
 
 public class LevelStage
 {
@@ -357,9 +356,9 @@ public class LevelStage
         {
         case 0xff:
           this.addworld(x, y, "ground", true);
-          if (MathUtils.random(1f) < 0.1f)
+          if (Help.random(1f) < 0.1f)
             this.addworld(x, y, "overlay-flower", false);
-          if (MathUtils.random(1f) < 0.1f)
+          if (Help.random(1f) < 0.1f)
             this.addworld(x, y, "overlay-rocks", false);
           break;
         case 0xcc:
@@ -434,10 +433,10 @@ public class LevelStage
   private void haveLevelBounds(float width, float height)
   {
     
-    int clouds = MathUtils.random(10, 30);
+    int clouds = (int) Help.random(10, 30);
     for (int i = 0; i < clouds; i++)
     {
-      this.cloudtiles.add(new CloudTile(this, MathUtils.random(width), MathUtils.random(height)));
+      this.cloudtiles.add(new CloudTile(this, Help.random(width), Help.random(height)));
     }
   }
 

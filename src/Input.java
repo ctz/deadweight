@@ -69,26 +69,26 @@ public class Input implements InputProcessor
   {
     switch (keycode)
     {
-    case Keys.KEYCODE_DPAD_LEFT:
-    case Keys.KEYCODE_A:
+    case Keys.DPAD_LEFT:
+    case Keys.A:
       this.left = onoff;
       break;
       
-    case Keys.KEYCODE_DPAD_RIGHT:
-    case Keys.KEYCODE_D:
+    case Keys.DPAD_RIGHT:
+    case Keys.D:
       this.right = onoff;
       break;
 
-    case Keys.KEYCODE_DPAD_CENTER:
-    case Keys.KEYCODE_DPAD_UP:
-    case Keys.KEYCODE_W:
-    case Keys.KEYCODE_SPACE:
+    case Keys.DPAD_CENTER:
+    case Keys.DPAD_UP:
+    case Keys.W:
+    case Keys.SPACE:
       this.jump = onoff;
       break;
 
-    case Keys.KEYCODE_END:
-    case Keys.KEYCODE_ENDCALL:
-    case Keys.KEYCODE_ESCAPE:
+    case Keys.END:
+    case Keys.ENDCALL:
+    case Keys.ESCAPE:
       GoAloneListener.instance.restart();
       break;
       

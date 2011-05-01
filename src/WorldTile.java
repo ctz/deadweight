@@ -6,7 +6,6 @@ import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
-import com.badlogic.gdx.utils.MathUtils;
 
 class CloudTile extends WorldTile
 {
@@ -18,7 +17,7 @@ class CloudTile extends WorldTile
     super(ls, x, y, "cloud", false);
     this.xorig = x;
     this.yorig = y;
-    float sz = MathUtils.random(0.1f, 0.5f);
+    float sz = Help.random(0.1f, 0.5f);
     this.setsz(sz * 20);
     this.depth = sz;
   }

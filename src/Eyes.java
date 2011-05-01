@@ -4,7 +4,6 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.physics.box2d.QueryCallback;
-import com.badlogic.gdx.utils.MathUtils;
 
 class Eye extends WithPosition
 {
@@ -115,7 +114,7 @@ class Eyes
       if (this.targetobj == null)
       {
         this.target.set(this.parent.position);
-        this.target.add(MathUtils.random(-4, 4), MathUtils.random(-2, 2));
+        this.target.add(Help.random(-4, 4), Help.random(-2, 2));
         //System.out.println("we have prephys rand = " + this.target);
       } else {
         this.lookAtTargetEyes();
@@ -155,7 +154,7 @@ class Eyes
     this.tmp.rotate(this.parent.rotation);
     this.tmp.add(this.parent.position);
     this.a.position.set(this.tmp);
-    targangle = Help.angleOfVec(this.tmp.sub(this.target));
+    targangle = this.tmp.sub(this.target).angle();
     
     this.a.rotation = Help.lerpAngle(this.a.rotation, targangle + 180, 0.12f);
     

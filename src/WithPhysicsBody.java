@@ -7,7 +7,6 @@ import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.physics.box2d.CircleShape;
 import com.badlogic.gdx.physics.box2d.Fixture;
-import com.badlogic.gdx.utils.MathUtils;
 
 abstract class WithPosition
 {
@@ -32,7 +31,7 @@ abstract class WithBlinkyEyes extends WithPhysicsBody
     if (this.blinkcount % this.blinkstep == 0)
     {
       this.eyes.prephys();
-      this.blinkstep = MathUtils.random(50, 100);
+      this.blinkstep = (int) Help.random(50, 100);
     }
   }
   
@@ -52,7 +51,7 @@ public abstract class WithPhysicsBody extends WithPosition
   public void postphys()
   {
     this.position = this.body.getPosition();
-    this.rotation = this.body.getAngle() * MathUtils.radiansToDegrees;
+    this.rotation = this.body.getAngle() * Help.radiansToDegrees;
     
     Vector2 dv = this.body.getLinearVelocity();
     dv.sub(this.lastvel);

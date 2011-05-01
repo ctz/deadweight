@@ -1,3 +1,5 @@
+import java.util.Random;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
@@ -5,12 +7,14 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.collision.BoundingBox;
-import com.badlogic.gdx.utils.MathUtils;
 
 
 public class Help
 {
   public static final Color WhiteColor = new Color(0xff, 0xff, 0xff, 0xff);
+  static public final float PI = 3.1415927f;
+  static public final float radiansToDegrees = 180f / PI;
+  static public final float degreesToRadians = PI / 180;
 
   public static void draw(SpriteBatch batch, TextureRegion tx, WithPosition thing, float angle, Color col)
   {
@@ -70,7 +74,7 @@ public class Help
   public static float angleOfVec(Vector2 v)
   {
     // bug in 195 libgdx!!
-    float angle = (float) Math.atan2(v.y, v.x) * MathUtils.radiansToDegrees;
+    float angle = (float) Math.atan2(v.y, v.x) * Help.radiansToDegrees;
     if (angle < 0)
       angle += 360;
     return angle;
@@ -82,6 +86,18 @@ public class Help
     
     return Gdx.files.internal(prefix + ".png").exists() &&
            Gdx.files.internal(prefix + ".txt").exists();
+  }
+  
+  static Random rand = new Random();
+  
+  static float random(float max)
+  {
+    return Help.rand.nextFloat() * max;
+  }
+  
+  static float random(float min, float max)
+  {
+    return min + Help.rand.nextFloat() * (max - min);
   }
   
 }
