@@ -91,6 +91,7 @@ public class Player extends WithBlinkyEyes
   {
     if (this.jumpedrecently == 0 && this.istouchingground(Consts.playerJumpNormalX, Consts.playerJumpNormalY))
     {
+      GameSound.jump();
       this.body.applyLinearImpulse(jumpforce, this.body.getWorldCenter());
       this.jumpedrecently = Consts.playerJumpFrames;
     }

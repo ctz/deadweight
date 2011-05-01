@@ -9,6 +9,7 @@ public class GoAloneListener implements ApplicationListener
   SpriteBatch batch;
   LevelStage stage;
   BitmapFont tmpfont;
+  GameSound sound;
   Input input;
   int currentLevel = 12;
   
@@ -18,6 +19,7 @@ public class GoAloneListener implements ApplicationListener
   public void create()
   {
     this.batch = new SpriteBatch();
+    this.sound = new GameSound();
     
     this.input = new Input();
     Gdx.input.setInputProcessor(this.input);
@@ -43,6 +45,7 @@ public class GoAloneListener implements ApplicationListener
     this.input.setLevel(this.stage);
     this.stage.load(currentLevel);
     this.resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+    this.sound.startmusic();
   }
   
   @Override

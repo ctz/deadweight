@@ -89,6 +89,10 @@ public class LevelStage
   {
     if (this.stopped)
       return;
+    if (again)
+      GameSound.fallout();
+    else
+      GameSound.win();
     this.message = message;
     this.stopped = true;
     this.retry = again;

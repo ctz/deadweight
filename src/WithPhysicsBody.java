@@ -47,11 +47,26 @@ public abstract class WithPhysicsBody extends WithPosition
 {
   Body body;
   LevelStage ls;
+  Vector2 lastvel = new Vector2();
 
   public void postphys()
   {
     this.position = this.body.getPosition();
     this.rotation = this.body.getAngle() * MathUtils.radiansToDegrees;
+    
+    Vector2 dv = this.body.getLinearVelocity();
+    dv.sub(this.lastvel);
+    float dvc = dv.len();
+    
+    if (dvc > 2f)
+    {
+      float vol = dvc / 40;
+      if (vol > 1)
+        vol = 1;
+      GameSound.bosh(vol);
+    }
+    
+    this.lastvel.set(this.body.getLinearVelocity());
   }
 
   public void prephys()

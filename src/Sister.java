@@ -64,11 +64,10 @@ public class Sister extends WithBlinkyEyes
   {
     super.postphys();
     
-    if (this.touchingspikes())
+    if (this.touchingspikes() || this.position.y < 0)
+    {
       this.ls.sisterdied();
-
-    if (this.position.y < 0)
-      this.ls.sisterdied();
+    }
     
     if (this.touchinggoal())
     {
