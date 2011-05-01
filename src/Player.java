@@ -1,13 +1,7 @@
-import java.util.Iterator;
-import java.util.List;
-
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.physics.box2d.Contact;
-import com.badlogic.gdx.physics.box2d.Joint;
-import com.badlogic.gdx.physics.box2d.JointEdge;
 
 
 public class Player extends WithBlinkyEyes
@@ -73,11 +67,6 @@ public class Player extends WithBlinkyEyes
       
       vec = c.GetWorldManifold().getNormal();
       vec.nor();
-      if (false) //vec.y < ny || vec.x > nx || vec.x < -nx)
-      {
-        System.out.println("bad manifold normal " + vec);
-        continue;
-      }
 
       return true;
     }

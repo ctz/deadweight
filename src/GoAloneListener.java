@@ -11,7 +11,7 @@ public class GoAloneListener implements ApplicationListener
   BitmapFont tmpfont;
   GameSound sound;
   Input input;
-  int currentLevel = 12;
+  int currentLevel = 0;
   
   static GoAloneListener instance;
   
