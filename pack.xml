@@ -11,7 +11,7 @@
                 <attribute name="Rsrc-Class-Path" value="./ gdx-backend-lwjgl-natives.jar gdx-backend-lwjgl.jar gdx-natives.jar gdx.jar json.jar"/>
             </manifest>
             <zipfileset src="jar-in-jar-loader.zip"/>
-            <fileset dir="D:/android/goalone/bin"/>
+            <fileset dir="D:/android/goalone/bin" excludes="deadweight.jar"/>
             <zipfileset dir="D:\android\goalone\libs" includes="gdx-backend-lwjgl-natives.jar"/>
             <zipfileset dir="D:\android\goalone\libs" includes="gdx-backend-lwjgl.jar"/>
             <zipfileset dir="D:\android\goalone\libs" includes="gdx-natives.jar"/>

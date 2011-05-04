@@ -13,7 +13,7 @@ class GameSound
   
   GameSound()
   {    
-    this.music = Gdx.audio.newMusic(Gdx.files.internal("sfx/game.ogg"));
+    this.music = Gdx.audio.newMusic(Gdx.files.internal("sfx/game.mp3"));
     this.music.setLooping(true);
 
     this.fx_fallout = Gdx.audio.newSound(Gdx.files.internal("sfx/fallout.wav"));
